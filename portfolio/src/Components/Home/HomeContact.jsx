@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import axios from "axios";
 import FadeInSection from "../FadeInSection";
+import axiosInstance from "../../axiosInstance";
 
 const HomeContact = () => {
   const [formData, setFormData] = useState({
@@ -20,7 +20,7 @@ const HomeContact = () => {
     setStatus("Sending...");
 
     try {
-      const res = await axios.post("http://localhost:5000/api/contact", formData);
+      const res = await axiosInstance.post("/api/contact", formData);
       setStatus("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
       console.log(res)
