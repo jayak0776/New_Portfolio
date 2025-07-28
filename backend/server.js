@@ -9,16 +9,23 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 const allowedOrigins = [
-  "https://portfolio-jayakumar-gubbala.onrender.com/",
+  "https://portfolio-jayakumar-gubbala.onrender.com",
   "http://localhost:5173", // for local dev
 ];
 // Allow only local frontend
 app.use(
   cors({
-    origin: allowedOrigins,
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
   })
 );
+
 
 app.use(express.json());
 
