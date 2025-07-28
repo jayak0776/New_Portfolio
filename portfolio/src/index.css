@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-bitcount: "Bitcount Prop Single", "sans-serif";
+    --font-intel: "Intel One Mono", "sans-serif";
+    --font-montserrat: "Montserrat", "sans-serif";
+    --font-arvo: "Arvo", "sans-serif";
+    --font-poppins: "Poppins", "sans-serif";
+    --color-sec: #f3f4f6;
+    --color-main: #425500;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Now, you can place your Tailwind imports and other CSS rules */
+@import "tailwindcss";

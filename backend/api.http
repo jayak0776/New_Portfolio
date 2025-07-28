@@ -1,0 +1,32 @@
+
+###
+POST http://localhost:5000/api/add-project
+Content-Type: application/json
+
+{
+  "title": "Snort Setup, Multi-Rule Detection, and Splunk Integration",
+  "description": "Snort was installed and configured as a network-based intrusion detection system (NIDS) to analyze traffic and detect a variety of threats using custom and community rules. Multiple Snort rules were authored to detect scanning behavior (e.g., Nmap), brute-force attempts, suspicious payloads, and protocol anomalies. These rules were tested in both live and offline modes using PCAP files and real-time traffic. Generated alerts were logged to a unified format and forwarded to Splunk for centralized monitoring. The integration enabled correlation of Snort alerts with host and network activity, allowing for deeper threat hunting and alert enrichment using Splunk dashboards.",
+  "image": "https://res.cloudinary.com/dquha58yu/image/upload/v1753599474/c8_kwcrn2.png",
+  "tech": ["Snort", "Splunk", "PCAP", "NIDS", "Alert Correlation"],
+  "codeLink": "https://github.com/jayak0776/Cybersecrity-SOC-30-Days-Challenges/blob/main/Day%2015/Day15_SNORT.pdf",
+  "live": false,
+  "projectType": "Cybersecurity SOC"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+###
+Get http://localhost:5000/api/get-projects
+
+###
+DELETE http://localhost:5000/api/delete-project/688516d74d3d2c89ba5a806b
