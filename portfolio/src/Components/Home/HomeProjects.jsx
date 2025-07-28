@@ -16,7 +16,7 @@ const HomeProjects = () => {
   const favoriteProjectIds = ["6885cc16c77f6cedc63f7a79", "68851cfe4d3d2c89ba5a809c", "68851d474d3d2c89ba5a809f"]; // replace with actual IDs
 
   useEffect(() => {
-    axiosInstance.get("/get-projects") // your actual endpoint here
+    axiosInstance.get("/api/get-projects") // your actual endpoint here
       .then((res) => {
         setAllProjects(res.data);
         const favs = res.data.filter((project) => favoriteProjectIds.includes(project._id)); // or project.title

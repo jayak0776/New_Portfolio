@@ -16,7 +16,7 @@ const Projects = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-  axiosInstance.get("/get-projects")
+  axiosInstance.get("/api/get-projects")
     .then((res) => {
       const data = res.data || [];
       setProjects(data);

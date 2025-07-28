@@ -4,15 +4,11 @@ const uri = process.env.MONGO_URI;
 
 const connectDB = async () => {
     try {
-        await mongoose.connect(uri, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            dbName: "portfolio" // optional, explicit database name
-        });
-        console.log("✅ Connection successful..!");
+        await mongoose.connect(uri); // ✅ Cleaned up
+        console.log("✅ MongoDB connection successful!");
     } catch (e) {
         console.error("❌ MongoDB connection error:", e.message);
-        process.exit(1); // optional: exit process if connection fails
+        process.exit(1);
     }
 };
 
