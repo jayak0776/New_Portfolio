@@ -11,7 +11,7 @@ const HomeBanner = () => {
 
   return (
     <>
-    <section className="h-[70vh] md:h-full lg:h-[88vh] w-full bg-white dark:bg-gray-900 font-poppins relative overflow-hidden md:py-32">
+    <section className="h-full md:h-full lg:h-[88vh] w-full bg-white dark:bg-gray-900 font-poppins py-20 relative overflow-hidden md:py-32">
       {/* Fixed Orange Circle */}
       <div className="absolute bottom-64 right-[0px] md:bottom-44 md:left-96 w-[300px] h-[300px] blur-3xl opacity-20 rounded-full z-0 pointer-events-none bg-main" />
 

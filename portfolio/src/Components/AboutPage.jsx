@@ -214,7 +214,7 @@ const AboutCards = () => {
       <FadeInSection delay={400}>
         <div className="relative max-w-5xl mx-auto">
         {/* MOBILE: Left line only */}
-        <div className="block md:hidden absolute left-0 top-0 w-1 bg-main h-full z-0"></div>
+        <div className="block md:hidden absolute left-2 top-0 w-1 bg-main h-full z-0"></div>
 
         {/* DESKTOP: Center line for zig-zag */}
         <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-main h-full z-0"></div>
@@ -230,7 +230,7 @@ const AboutCards = () => {
               }`}
             >
               {/* MOBILE dot (left aligned) */}
-              <div className="block md:hidden absolute left-[-0.5rem] top-6 w-5 h-5 bg-main rounded-full z-10"></div>
+              <div className="block md:hidden absolute left-[0rem] top-6 w-5 h-5 bg-main rounded-full z-10"></div>
 
               {/* DESKTOP dot (center aligned) */}
               <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-main border-4 border-white dark:border-gray-900 rounded-full z-20"></div>
