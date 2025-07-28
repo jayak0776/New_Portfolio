@@ -8,10 +8,14 @@ connectDB();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+const allowedOrigins = [
+  "http://localhost:5173", // for local dev
+  "https://portfolio-jayakumar-gubbala.onrender.com/" // replace with actual frontend Render domain
+];
 // Allow only local frontend
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: allowedOrigins,
     credentials: true,
   })
 );
